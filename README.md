@@ -1,7 +1,7 @@
-https://william-integral-takehome-production.up.railway.app/api-doc
+https://william-integral-takehome-production.up.railway.app/api-docs
 
 Hardcoded Accounts
-
+```json
 {
     "VNTR5NgwPA2icJNgt2-n1": {
         "accountId": "VNTR5NgwPA2icJNgt2-n1",
@@ -29,3 +29,4 @@ Hardcoded Accounts
         "lastCheckedDate": ""
     }
 }
+```
