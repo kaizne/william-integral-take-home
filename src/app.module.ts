@@ -7,7 +7,6 @@ import { AccountsService } from './accounts/accounts.service';
 import { EtherscanService } from './etherscan/etherscan.service';
 import { StethController } from './steth/steth.controller';
 
-
 @Module({
   imports: [
     ConfigModule.forRoot({
