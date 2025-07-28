@@ -119,7 +119,7 @@ export class AccountsService {
             accountId: accountId,
             toAddress: transaction.to,
             fromAddress: transaction.from,
-            type: transaction.from === walletId ? 'withdrawal' : 'deposit',
+            type: transaction.from.toLowerCase() === walletId.toLowerCase() ? 'withdrawal' : 'deposit',
             amount: transaction.value ? 
                 String(this.etherScanService.convertBigInt(
                     transaction.value, Number(transaction.tokenDecimal
