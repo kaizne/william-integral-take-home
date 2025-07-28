@@ -1,4 +1,4 @@
-https://william-integral-takehome-production.up.railway.app/api-doc
+https://william-integral-takehome-production.up.railway.app/api-docs
 
 Hardcoded Accounts
 ```json
