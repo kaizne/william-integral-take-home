@@ -23,7 +23,6 @@ export class AccountsService {
         return differenceMinutes;
     }
 
-
     private async transactionsCached(accountId: string) {
         const filePath = path.join(__dirname, '..', 'data', `${accountId}_transactions.json`)
         try {
@@ -59,7 +58,7 @@ export class AccountsService {
                 return apiResponse
             } else {
                 console.log('Cache expired')
-                const walletId = this.accountWalletMap[accountId].wallet
+                const walletId = this.accountWalletMap[accountId].walletId
                 const etherScanTransactions: any[] = await this.etherScanService.findAllTransactions(walletId)
                 const transactions: Transaction[] = 
                     await this.transformTransactions(etherScanTransactions, accountId, walletId)
